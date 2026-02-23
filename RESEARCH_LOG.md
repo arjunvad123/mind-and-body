@@ -59,4 +59,45 @@ Designed three experiments:
 
 Proceeding to detailed implementation planning.
 
+### Implementation Phase
+
+**Repository structure created:**
+- `main` branch: theoretical foundation, experiment READMEs, docs
+- `experiment1-executor-observer-separation`: full pipeline code
+- `experiment2-confabulation-test`: perturbation engine + scoring
+- `experiment3-first-thought`: dual-path observer + analysis
+
+**Code written (all three experiments):**
+
+Experiment 1 — Executor-Observer Separation:
+- `TappableNetwork`: NN with read-only activation taps at every layer
+- `DQNTrainer`: trains executor + collects state streams
+- `StatePacket` protocol: the one-way data channel from executor to observer
+- `ObserverTransformer`: causal transformer over state packet sequences
+- `StatePacketEmbedder`: unifies env obs, hidden states, logits, actions, rewards
+- Consciousness probes: Self-Model (RSA), Surprise, Temporal Integration, Preferences
+
+Experiment 2 — Confabulation Test:
+- `PerturbationEngine`: policy swap, noise injection, observation masking
+- `ConfabulationScorer`: detection, adaptation, confabulation metrics
+- Split-brain pattern detector: confident + wrong + detected = confabulation
+
+Experiment 3 — First Thought vs. Reasoning:
+- `DualPathObserver`: fast path (1 layer) + slow path (4-layer transformer)
+- K-pass iterative deliberation mechanism
+- `FirstThoughtAnalyzer`: accuracy comparison, overthinking curve, calibration
+- Dunning-Kruger check: is the slow path overconfident?
+
+**All branches pushed to GitHub:**
+https://github.com/arjunvad123/mind-and-body
+
+### Next Steps
+
+1. Install dependencies and run Experiment 1 end-to-end
+2. Analyze results, iterate on observer architecture if needed
+3. Run Experiment 2 (requires Experiment 1 outputs)
+4. Run Experiment 3 (requires Experiment 1 outputs)
+5. Compare results across the embodiment gradient (CartPole → MuJoCo)
+6. Begin low-level transformer architecture exploration (Point 3 from Arjun)
+
 ---
