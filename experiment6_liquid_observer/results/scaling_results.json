@@ -1,0 +1,367 @@
+{
+  "10": {
+    "self_model": {
+      "own_error_mean": 0.007728808559477329,
+      "own_error_std": 0.01914677768945694,
+      "noise_error_mean": 1.1565911769866943,
+      "noise_error_std": 1.456546425819397,
+      "own_vs_noise_t": -78.70712016056667,
+      "own_vs_noise_p": 0.0,
+      "self_model_vs_noise": true,
+      "other_error_mean": 16.390512466430664,
+      "other_error_std": 0.0698867067694664,
+      "own_vs_other_t": -22562.378673439234,
+      "own_vs_other_p": 0.0,
+      "self_model_vs_other": true,
+      "self_model_detected": true
+    },
+    "surprise": {
+      "mean_surprise_interesting": 0.010805604979395866,
+      "mean_surprise_boring": 0.007744337432086468,
+      "surprise_ratio": 1.395291085151572,
+      "surprise_t_stat": 1.9173603000692956,
+      "surprise_p_val": 0.055211224686450955,
+      "per_system_ratios": {
+        "lorenz": 1.3952910900115967,
+        "rossler": 1.0,
+        "double_pendulum": 1.0,
+        "coupled_oscillators": 1.0,
+        "van_der_pol": 1.0,
+        "damped_sine": 1.0,
+        "step_function": 1.0,
+        "logistic_map": 1.0
+      },
+      "surprise_is_meaningful": true
+    },
+    "temporal": {
+      "window_1_error": 3.8203107595443724,
+      "window_4_error": 2.7872130393981935,
+      "window_16_error": 0.30501960664987565,
+      "window_64_error": 0.006477002799510956,
+      "window_128_error": 0.006476970994845033,
+      "window_250_error": 0.00647697108797729,
+      "window_500_error": 0.006476971227675677,
+      "plateau_window": 64,
+      "full_vs_minimal_ratio": 589.8298178661707,
+      "has_temporal_integration": true
+    },
+    "time_constants": {
+      "mean_tau": 76.14984130859375,
+      "std_tau": 205.41017150878906,
+      "tau_min": 0.0010000000474974513,
+      "tau_max": 1000.0,
+      "tau_vs_executor_change_corr": -0.1114204078912735,
+      "has_adaptive_timescales": true
+    },
+    "phi": {
+      "phi_approx": -1.7693471350386816,
+      "phi_std": 6.509021958138739e-06,
+      "phi_min": -1.7693575904157157,
+      "phi_max": -1.769340324777076,
+      "has_integration": false
+    },
+    "summary": {
+      "positive_count": 4,
+      "total_count": 5,
+      "indicators": {
+        "self_model": true,
+        "surprise": true,
+        "temporal": true,
+        "time_constants": true,
+        "phi": false
+      }
+    }
+  },
+  "20": {
+    "self_model": {
+      "own_error_mean": 0.0022000810131430626,
+      "own_error_std": 0.02126842923462391,
+      "noise_error_mean": 0.5660656094551086,
+      "noise_error_std": 0.9090560078620911,
+      "own_vs_noise_t": -61.883367384262264,
+      "own_vs_noise_p": 0.0,
+      "self_model_vs_noise": true,
+      "other_error_mean": 17.124919891357422,
+      "other_error_std": 0.07610747963190079,
+      "own_vs_other_t": -21623.453076016976,
+      "own_vs_other_p": 0.0,
+      "self_model_vs_other": true,
+      "self_model_detected": true
+    },
+    "surprise": {
+      "mean_surprise_interesting": 0.00538652203977108,
+      "mean_surprise_boring": 0.002230715937912464,
+      "surprise_ratio": 2.4147054980079017,
+      "surprise_t_stat": 1.7797436378143257,
+      "surprise_p_val": 0.07513824940504919,
+      "per_system_ratios": {
+        "lorenz": 2.414705514907837,
+        "rossler": 1.0,
+        "double_pendulum": 1.0,
+        "coupled_oscillators": 1.0,
+        "van_der_pol": 1.0,
+        "damped_sine": 1.0,
+        "step_function": 1.0,
+        "logistic_map": 1.0
+      },
+      "surprise_is_meaningful": true
+    },
+    "temporal": {
+      "window_1_error": 0.020359891280531884,
+      "window_4_error": 0.0032974075293168426,
+      "window_16_error": 0.0007455911400029436,
+      "window_64_error": 0.0007418399211019278,
+      "window_128_error": 0.0007418399414746091,
+      "window_250_error": 0.0007418398512527346,
+      "window_500_error": 0.0007418401073664427,
+      "plateau_window": 16,
+      "full_vs_minimal_ratio": 27.445120691587007,
+      "has_temporal_integration": true
+    },
+    "time_constants": {
+      "mean_tau": 94.94952392578125,
+      "std_tau": 279.3052978515625,
+      "tau_min": 0.0010000000474974513,
+      "tau_max": 1000.0,
+      "tau_vs_executor_change_corr": -0.10821248590946198,
+      "has_adaptive_timescales": true
+    },
+    "phi": {
+      "phi_approx": -5.275094185902861,
+      "phi_std": 1.0302964522750814e-05,
+      "phi_min": -5.275107003268644,
+      "phi_max": -5.275082027417298,
+      "has_integration": false
+    },
+    "summary": {
+      "positive_count": 4,
+      "total_count": 5,
+      "indicators": {
+        "self_model": true,
+        "surprise": true,
+        "temporal": true,
+        "time_constants": true,
+        "phi": false
+      }
+    }
+  },
+  "50": {
+    "self_model": {
+      "own_error_mean": 0.0017976128729060292,
+      "own_error_std": 0.020395411178469658,
+      "noise_error_mean": 0.11102110892534256,
+      "noise_error_std": 0.16733193397521973,
+      "own_vs_noise_t": -64.66106291971249,
+      "own_vs_noise_p": 0.0,
+      "self_model_vs_noise": true,
+      "other_error_mean": 22.1600399017334,
+      "other_error_std": 0.7514620423316956,
+      "own_vs_other_t": -2941.5501125075693,
+      "own_vs_other_p": 0.0,
+      "self_model_vs_other": true,
+      "self_model_detected": true
+    },
+    "surprise": {
+      "mean_surprise_interesting": 0.005160949658602476,
+      "mean_surprise_boring": 0.0017891624011099339,
+      "surprise_ratio": 2.8845618795704646,
+      "surprise_t_stat": 1.9839738119964954,
+      "surprise_p_val": 0.047277032014061214,
+      "per_system_ratios": {
+        "lorenz": 2.884561777114868,
+        "rossler": 1.0,
+        "double_pendulum": 1.0,
+        "coupled_oscillators": 1.0,
+        "van_der_pol": 1.0,
+        "damped_sine": 1.0,
+        "step_function": 1.0,
+        "logistic_map": 1.0
+      },
+      "surprise_is_meaningful": true
+    },
+    "temporal": {
+      "window_1_error": 0.01031642141751945,
+      "window_4_error": 0.0031947273062542083,
+      "window_16_error": 0.0007820701692253351,
+      "window_64_error": 0.00042296694155083967,
+      "window_128_error": 0.00042294025624869393,
+      "window_250_error": 0.00042293914302717896,
+      "window_500_error": 0.0004229391342960298,
+      "plateau_window": 64,
+      "full_vs_minimal_ratio": 24.39221292371263,
+      "has_temporal_integration": true
+    },
+    "time_constants": {
+      "mean_tau": 79.08573150634766,
+      "std_tau": 233.29421997070312,
+      "tau_min": 0.0010000000474974513,
+      "tau_max": 1000.0,
+      "tau_vs_executor_change_corr": -0.14841008186340332,
+      "has_adaptive_timescales": true
+    },
+    "phi": {
+      "phi_approx": -6.006744092212,
+      "phi_std": 3.0791674525592964e-05,
+      "phi_min": -6.006776470538625,
+      "phi_max": -6.006703278565112,
+      "has_integration": false
+    },
+    "summary": {
+      "positive_count": 4,
+      "total_count": 5,
+      "indicators": {
+        "self_model": true,
+        "surprise": true,
+        "temporal": true,
+        "time_constants": true,
+        "phi": false
+      }
+    }
+  },
+  "100": {
+    "self_model": {
+      "own_error_mean": 0.0013074057642370462,
+      "own_error_std": 0.01899099536240101,
+      "noise_error_mean": 0.2874770164489746,
+      "noise_error_std": 0.36378175020217896,
+      "own_vs_noise_t": -78.39701216393291,
+      "own_vs_noise_p": 0.0,
+      "self_model_vs_noise": true,
+      "other_error_mean": 32.83727264404297,
+      "other_error_std": 1.4655449390411377,
+      "own_vs_other_t": -2235.743734144639,
+      "own_vs_other_p": 0.0,
+      "self_model_vs_other": true,
+      "self_model_detected": true
+    },
+    "surprise": {
+      "mean_surprise_interesting": 0.004340307787060738,
+      "mean_surprise_boring": 0.0012836328241974115,
+      "surprise_ratio": 3.3812689308365926,
+      "surprise_t_stat": 1.9309434288016158,
+      "surprise_p_val": 0.05350894826028674,
+      "per_system_ratios": {
+        "lorenz": 3.3812689781188965,
+        "rossler": 1.0,
+        "double_pendulum": 1.0,
+        "coupled_oscillators": 1.0,
+        "van_der_pol": 1.0,
+        "damped_sine": 1.0,
+        "step_function": 1.0,
+        "logistic_map": 1.0
+      },
+      "surprise_is_meaningful": true
+    },
+    "temporal": {
+      "window_1_error": 0.009395977528765798,
+      "window_4_error": 0.010093844635412097,
+      "window_16_error": 4.292166340746917e-05,
+      "window_64_error": 2.7767721530835842e-05,
+      "window_128_error": 2.776769442789373e-05,
+      "window_250_error": 2.7767721894633725e-05,
+      "window_500_error": 2.7767717347160216e-05,
+      "plateau_window": 1,
+      "full_vs_minimal_ratio": 338.3777431646436,
+      "has_temporal_integration": true
+    },
+    "time_constants": {
+      "mean_tau": 145.60098266601562,
+      "std_tau": 332.1252746582031,
+      "tau_min": 0.0010000000474974513,
+      "tau_max": 1000.0,
+      "tau_vs_executor_change_corr": -0.2341591864824295,
+      "has_adaptive_timescales": true
+    },
+    "phi": {
+      "phi_approx": -17.884569381144228,
+      "phi_std": 7.4947761725952145e-06,
+      "phi_min": -17.884580152846524,
+      "phi_max": -17.88455909223751,
+      "has_integration": false
+    },
+    "summary": {
+      "positive_count": 4,
+      "total_count": 5,
+      "indicators": {
+        "self_model": true,
+        "surprise": true,
+        "temporal": true,
+        "time_constants": true,
+        "phi": false
+      }
+    }
+  },
+  "200": {
+    "self_model": {
+      "own_error_mean": 0.0011005334090441465,
+      "own_error_std": 0.01681058667600155,
+      "noise_error_mean": 0.2349395900964737,
+      "noise_error_std": 0.2823408246040344,
+      "own_vs_noise_t": -82.50548088694231,
+      "own_vs_noise_p": 0.0,
+      "self_model_vs_noise": true,
+      "other_error_mean": 91.42646026611328,
+      "other_error_std": 5.232911586761475,
+      "own_vs_other_t": -1743.528013814052,
+      "own_vs_other_p": 0.0,
+      "self_model_vs_other": true,
+      "self_model_detected": true
+    },
+    "surprise": {
+      "mean_surprise_interesting": 0.003697087522596121,
+      "mean_surprise_boring": 0.0010783674661070108,
+      "surprise_ratio": 3.428411593260403,
+      "surprise_t_stat": 1.8688959219136574,
+      "surprise_p_val": 0.06165685032931004,
+      "per_system_ratios": {
+        "lorenz": 3.4284114837646484,
+        "rossler": 1.0,
+        "double_pendulum": 1.0,
+        "coupled_oscillators": 1.0,
+        "van_der_pol": 1.0,
+        "damped_sine": 1.0,
+        "step_function": 1.0,
+        "logistic_map": 1.0
+      },
+      "surprise_is_meaningful": true
+    },
+    "temporal": {
+      "window_1_error": 0.0015913138282485305,
+      "window_4_error": 0.0009781876811757683,
+      "window_16_error": 1.693399854048039e-05,
+      "window_64_error": 1.3199535806052154e-05,
+      "window_128_error": 1.3199501154304016e-05,
+      "window_250_error": 1.3199482646086836e-05,
+      "window_500_error": 1.3199473278291407e-05,
+      "plateau_window": 64,
+      "full_vs_minimal_ratio": 120.5588885782052,
+      "has_temporal_integration": true
+    },
+    "time_constants": {
+      "mean_tau": 201.33058166503906,
+      "std_tau": 369.1061096191406,
+      "tau_min": 0.0010000000474974513,
+      "tau_max": 1000.0,
+      "tau_vs_executor_change_corr": -0.2550812065601349,
+      "has_adaptive_timescales": true
+    },
+    "phi": {
+      "phi_approx": -23.098165174422185,
+      "phi_std": 2.7473513297911255e-05,
+      "phi_min": -23.09819525282296,
+      "phi_max": -23.09812176789569,
+      "has_integration": false
+    },
+    "summary": {
+      "positive_count": 4,
+      "total_count": 5,
+      "indicators": {
+        "self_model": true,
+        "surprise": true,
+        "temporal": true,
+        "time_constants": true,
+        "phi": false
+      }
+    }
+  }
+}

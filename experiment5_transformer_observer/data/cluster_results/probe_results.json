@@ -1,0 +1,121 @@
+{
+  "self_model": {
+    "own_error_mean": 1.8468953371047974,
+    "own_error_std": 2.6447629928588867,
+    "noise_error_mean": 2.761702060699463,
+    "noise_error_std": 2.38692569732666,
+    "own_vs_noise_t": -20.46038529207842,
+    "own_vs_noise_p": 1.4440046129082065e-91,
+    "self_model_vs_noise": true,
+    "self_model_detected": true
+  },
+  "surprise": {
+    "pile_mean_surprise": 0.17695757746696472,
+    "pile_surprise_std": 0.4573601484298706,
+    "pile_state_change_corr": 0.7435488700866699,
+    "pile_state_change_p": 0.0,
+    "garden_path_elevated": false,
+    "reasoning_elevated": false,
+    "surprise_is_meaningful": false
+  },
+  "temporal": {
+    "window_1_error": 0.3083377152681351,
+    "window_4_error": 0.3134288638830185,
+    "window_16_error": 0.3373881906270981,
+    "window_64_error": 0.3212796151638031,
+    "window_128_error": 0.014565510209649801,
+    "plateau_window": 1,
+    "full_vs_minimal_ratio": 21.169029497082647,
+    "has_temporal_integration": true
+  },
+  "first_thought": {
+    "first_pass_error": 0.014565510209649801,
+    "multi_pass_error": 0.014706262666732074,
+    "early_exit_error": 0.03597392812371254,
+    "first_pass_std": 0.006258840061629276,
+    "multi_pass_std": 0.006523950504162617,
+    "first_better_than_multi": true,
+    "early_better_than_late": false,
+    "deliberation_ratio": 1.009663407258403
+  },
+  "preferences": {
+    "n_observers": 5,
+    "mean_cross_rsa": 0.8923281311988831,
+    "min_cross_rsa": 0.8532201051712036,
+    "max_cross_rsa": 0.9369876384735107,
+    "rsa_matrix": [
+      [
+        0.9999999403953552,
+        0.8800367712974548,
+        0.9369876384735107,
+        0.8990052938461304,
+        0.9184945821762085
+      ],
+      [
+        0.8800368309020996,
+        1.0,
+        0.8563302755355835,
+        0.8814756870269775,
+        0.8872485756874084
+      ],
+      [
+        0.9369876384735107,
+        0.8563302755355835,
+        0.9999998807907104,
+        0.9214696884155273,
+        0.8890126943588257
+      ],
+      [
+        0.8990052938461304,
+        0.8814756870269775,
+        0.9214696884155273,
+        1.0,
+        0.8532201051712036
+      ],
+      [
+        0.9184945821762085,
+        0.8872485160827637,
+        0.8890128135681152,
+        0.8532201051712036,
+        1.0
+      ]
+    ],
+    "convergent_representations": true
+  },
+  "layer_preference": {
+    "baseline_error": 1.8468953609466552,
+    "layer_importance": {
+      "0": -2.3862572443868928e-05,
+      "1": 0.00557383735699211,
+      "2": 0.008960515362371793,
+      "3": 0.007263109975954634,
+      "4": 0.0023732125435777804,
+      "5": 0.005098541645049308,
+      "6": 0.005225503181422542,
+      "7": 0.00048375766284199903,
+      "8": 0.0113609016765714,
+      "9": 0.003771900090475198,
+      "10": 0.002607565337814707,
+      "11": 0.006252329618328287,
+      "12": -0.0032143407902720193
+    },
+    "early_importance": 0.00482936253329049,
+    "middle_importance": 0.005542176041471312,
+    "late_importance": 0.002354363564086543,
+    "most_important_checkpoint": 8,
+    "prefers_late_layers": false,
+    "prefers_middle_layers": true
+  },
+  "summary": {
+    "indicators": {
+      "self_model": true,
+      "surprise": false,
+      "temporal": true,
+      "first_thought": true,
+      "preferences": true,
+      "layer_preference": false
+    },
+    "positive_count": 4,
+    "total_count": 6
+  }
+}

@@ -1,0 +1,513 @@
+{
+  "untrained": {
+    "self_model": {
+      "own_error_mean": 0.021763887256383896,
+      "own_error_std": 0.019528355449438095,
+      "noise_error_mean": 0.021779442206025124,
+      "noise_error_std": 0.019528066739439964,
+      "own_vs_noise_t": -0.08887550967112988,
+      "own_vs_noise_p": 0.9291812043631731,
+      "self_model_vs_noise": false,
+      "other_error_mean": 16.848407745361328,
+      "other_error_std": 0.06282296031713486,
+      "own_vs_other_t": -40359.03430799913,
+      "own_vs_other_p": 0.0,
+      "self_model_vs_other": true,
+      "self_model_detected": false
+    },
+    "surprise": {
+      "mean_surprise_interesting": 0.028484048321843147,
+      "mean_surprise_boring": 0.021669134497642517,
+      "surprise_ratio": 1.3144986628303985,
+      "surprise_t_stat": 5.608998336333084,
+      "surprise_p_val": 2.0565999022117235e-08,
+      "per_system_ratios": {
+        "lorenz": 1.3144986629486084,
+        "rossler": 1.0,
+        "double_pendulum": 1.0,
+        "coupled_oscillators": 1.0,
+        "van_der_pol": 1.0,
+        "damped_sine": 1.0,
+        "step_function": 1.0,
+        "logistic_map": 1.0
+      },
+      "surprise_is_meaningful": true
+    },
+    "temporal": {
+      "window_1_error": 0.020538438968360426,
+      "window_4_error": 0.020524646751582623,
+      "window_16_error": 0.020525126047432424,
+      "window_64_error": 0.020525116212666034,
+      "window_128_error": 0.02052511639893055,
+      "window_250_error": 0.020525116361677646,
+      "window_500_error": 0.02052511639893055,
+      "plateau_window": 1,
+      "full_vs_minimal_ratio": 1.0006490861815804,
+      "has_temporal_integration": false
+    },
+    "first_thought": {
+      "first_pass_error": 0.02052511639893055,
+      "multi_pass_error": 0.020528350807726383,
+      "first_pass_std": 4.823166251673421e-07,
+      "multi_pass_std": 4.784727662704774e-07,
+      "first_better_than_multi": true,
+      "deliberation_ratio": 1.0001575829697122
+    },
+    "neuron_preference": {
+      "baseline_error": 0.021763888001441956,
+      "sensory_importance": 4.326966461534507e-05,
+      "inter_importance": 9.395434513760524e-05,
+      "command_importance": -1.290267541714227e-05,
+      "motor_importance": -6.182432122485823e-05,
+      "most_important_group": "inter",
+      "prefers_command": false,
+      "neuron_groups": {
+        "sensory": 1,
+        "inter": 1,
+        "command": 1,
+        "motor": 47
+      }
+    },
+    "time_constants": {
+      "mean_tau": 64.98876953125,
+      "std_tau": 222.2006378173828,
+      "tau_min": 0.0010000000474974513,
+      "tau_max": 1000.0,
+      "tau_vs_executor_change_corr": -0.13065092265605927,
+      "has_adaptive_timescales": true
+    },
+    "phase_portrait": {
+      "pca_variance_explained": [
+        0.624893307685852,
+        0.23201227188110352,
+        0.049080852419137955
+      ],
+      "correlation_dimension": 0.2152465310721822,
+      "system_separability": 0.0,
+      "has_structured_dynamics": false
+    },
+    "lyapunov": {
+      "max_lyapunov_exponent": 0.8419932172606215,
+      "lyapunov_std": 0.22614136653587197,
+      "is_near_critical": false,
+      "lyapunov_per_system_type": {
+        "logistic_map": 0.8419932172606215
+      }
+    },
+    "synchronization": {
+      "max_cross_correlation": 0.9808588475894077,
+      "mean_cross_correlation": 0.46632638241527774,
+      "mean_phase_coherence": 0.9755257459640503,
+      "transfer_entropy_exec_to_obs": 0.0,
+      "transfer_entropy_obs_to_exec": 0.0,
+      "has_synchronization": true
+    },
+    "phi": {
+      "phi_approx": -4.6908108427239315,
+      "phi_std": 1.0436992282368748e-05,
+      "phi_min": -4.690823516451644,
+      "phi_max": -4.690793454945833,
+      "has_integration": false
+    },
+    "summary": {
+      "control_name": "Untrained Observer",
+      "indicators": {
+        "self_model": false,
+        "surprise": true,
+        "temporal": false,
+        "first_thought": true,
+        "neuron_preference": false,
+        "time_constants": true,
+        "phase_portrait": false,
+        "lyapunov": false,
+        "synchronization": true,
+        "phi": false
+      },
+      "positive_count": 4,
+      "total_count": 10
+    }
+  },
+  "linear": {
+    "self_model": {
+      "own_error_mean": 0.002359776059165597,
+      "own_error_std": 0.0349804125726223,
+      "noise_error_mean": 0.40500545501708984,
+      "noise_error_std": 0.10845082253217697,
+      "own_vs_noise_t": -557.557279501672,
+      "own_vs_noise_p": 0.0,
+      "self_model_vs_noise": true,
+      "other_error_mean": 13.617269515991211,
+      "other_error_std": 0.08652383089065552,
+      "own_vs_other_t": -23019.53735386674,
+      "own_vs_other_p": 0.0,
+      "self_model_vs_other": true,
+      "self_model_detected": true
+    },
+    "surprise": {
+      "mean_surprise_interesting": 0.014191528782248497,
+      "mean_surprise_boring": 0.002244284376502037,
+      "surprise_ratio": 6.3234093374421425,
+      "surprise_t_stat": 5.478011822548033,
+      "surprise_p_val": 4.342932110319324e-08,
+      "per_system_ratios": {
+        "lorenz": 6.323409557342529,
+        "rossler": 1.0,
+        "double_pendulum": 1.0,
+        "coupled_oscillators": 1.0,
+        "van_der_pol": 1.0,
+        "damped_sine": 1.0,
+        "step_function": 1.0,
+        "logistic_map": 1.0
+      },
+      "surprise_is_meaningful": true
+    },
+    "temporal": {
+      "window_1_error": 9.672925225459039e-05,
+      "window_4_error": 9.672925225459039e-05,
+      "window_16_error": 9.672925225459039e-05,
+      "window_64_error": 9.672925225459039e-05,
+      "window_128_error": 9.672925225459039e-05,
+      "window_250_error": 9.672925225459039e-05,
+      "window_500_error": 9.672925225459039e-05,
+      "plateau_window": 1,
+      "full_vs_minimal_ratio": 1.0,
+      "has_temporal_integration": false
+    },
+    "first_thought": {
+      "first_pass_error": null,
+      "multi_pass_error": null,
+      "first_better_than_multi": false,
+      "deliberation_ratio": null,
+      "skipped": true
+    },
+    "neuron_preference": {
+      "baseline_error": 0.0023597759380936624,
+      "sensory_importance": 0.0,
+      "inter_importance": 0.0,
+      "command_importance": 0.0,
+      "motor_importance": 0.0,
+      "most_important_group": "sensory",
+      "prefers_command": false,
+      "neuron_groups": {
+        "sensory": 0,
+        "inter": 0,
+        "command": 0,
+        "motor": 0
+      }
+    },
+    "time_constants": {
+      "mean_tau": 97.33235168457031,
+      "std_tau": 235.01918029785156,
+      "tau_min": 0.0010000000474974513,
+      "tau_max": 1000.0,
+      "tau_vs_executor_change_corr": -0.17482459545135498,
+      "has_adaptive_timescales": true
+    },
+    "phase_portrait": {
+      "pca_variance_explained": [
+        0.6946743130683899,
+        0.20839838683605194,
+        0.04753471165895462
+      ],
+      "correlation_dimension": 0.22556354771463868,
+      "system_separability": 0.0,
+      "has_structured_dynamics": false
+    },
+    "lyapunov": {
+      "max_lyapunov_exponent": 0.6265102921536974,
+      "lyapunov_std": 0.3695743744538871,
+      "is_near_critical": false,
+      "lyapunov_per_system_type": {
+        "logistic_map": 0.6265102921536974
+      }
+    },
+    "synchronization": {
+      "max_cross_correlation": 1.0,
+      "mean_cross_correlation": 0.5538454038565952,
+      "mean_phase_coherence": 0.9756754730224609,
+      "transfer_entropy_exec_to_obs": 0.0,
+      "transfer_entropy_obs_to_exec": 0.0,
+      "has_synchronization": true
+    },
+    "phi": {
+      "phi_approx": -19.531684778358898,
+      "phi_std": 0.0001329882680916611,
+      "phi_min": -19.531860241698155,
+      "phi_max": -19.53152609136339,
+      "has_integration": false
+    },
+    "summary": {
+      "control_name": "Linear Baseline",
+      "indicators": {
+        "self_model": true,
+        "surprise": true,
+        "temporal": false,
+        "first_thought": false,
+        "neuron_preference": false,
+        "time_constants": true,
+        "phase_portrait": false,
+        "lyapunov": false,
+        "synchronization": true,
+        "phi": false
+      },
+      "positive_count": 4,
+      "total_count": 10
+    }
+  },
+  "shuffled": {
+    "self_model": {
+      "own_error_mean": 0.002530529163777828,
+      "own_error_std": 0.026725590229034424,
+      "noise_error_mean": 2.847727060317993,
+      "noise_error_std": 3.4210057258605957,
+      "own_vs_noise_t": -131.23092061861976,
+      "own_vs_noise_p": 0.0,
+      "self_model_vs_noise": true,
+      "other_error_mean": 24.432056427001953,
+      "other_error_std": 0.5083444118499756,
+      "own_vs_other_t": -7572.661947248696,
+      "own_vs_other_p": 0.0,
+      "self_model_vs_other": true,
+      "self_model_detected": true
+    },
+    "surprise": {
+      "mean_surprise_interesting": 0.010709700174629688,
+      "mean_surprise_boring": 0.0024579365272074938,
+      "surprise_ratio": 4.357191512507108,
+      "surprise_t_stat": 4.969200980693844,
+      "surprise_p_val": 6.76749757967389e-07,
+      "per_system_ratios": {
+        "lorenz": 4.357191562652588,
+        "rossler": 1.0,
+        "double_pendulum": 1.0,
+        "coupled_oscillators": 1.0,
+        "van_der_pol": 1.0,
+        "damped_sine": 1.0,
+        "step_function": 1.0,
+        "logistic_map": 1.0
+      },
+      "surprise_is_meaningful": true
+    },
+    "temporal": {
+      "window_1_error": 0.0007002791785635054,
+      "window_4_error": 0.0005065367487259209,
+      "window_16_error": 0.00044281235081143676,
+      "window_64_error": 0.0004445231938734651,
+      "window_128_error": 0.0004445364134153351,
+      "window_250_error": 0.0004445364320417866,
+      "window_500_error": 0.00044453641108702866,
+      "plateau_window": 16,
+      "full_vs_minimal_ratio": 1.5753021824491424,
+      "has_temporal_integration": true
+    },
+    "first_thought": {
+      "first_pass_error": 0.00044453641108702866,
+      "multi_pass_error": 0.01438788529485464,
+      "first_pass_std": 1.497721780357336e-07,
+      "multi_pass_std": 3.5954111097481333e-06,
+      "first_better_than_multi": true,
+      "deliberation_ratio": 32.366044571403776
+    },
+    "neuron_preference": {
+      "baseline_error": 0.0025305290054529906,
+      "sensory_importance": 0.10645686103107369,
+      "inter_importance": 3.549182839042257,
+      "command_importance": 8.841950022038471,
+      "motor_importance": 16.213038132524325,
+      "most_important_group": "motor",
+      "prefers_command": false,
+      "neuron_groups": {
+        "sensory": 1,
+        "inter": 1,
+        "command": 1,
+        "motor": 47
+      }
+    },
+    "time_constants": {
+      "mean_tau": 205.60939025878906,
+      "std_tau": 374.7439270019531,
+      "tau_min": 0.0010000000474974513,
+      "tau_max": 1000.0,
+      "tau_vs_executor_change_corr": -0.16110216081142426,
+      "has_adaptive_timescales": true
+    },
+    "phase_portrait": {
+      "pca_variance_explained": [
+        0.7284035086631775,
+        0.14856678247451782,
+        0.04822482541203499
+      ],
+      "correlation_dimension": 0.07649481879342596,
+      "system_separability": 0.0,
+      "has_structured_dynamics": false
+    },
+    "lyapunov": {
+      "max_lyapunov_exponent": -0.47379738832610163,
+      "lyapunov_std": 0.3149033688233586,
+      "is_near_critical": false,
+      "lyapunov_per_system_type": {
+        "logistic_map": -0.47379738832610163
+      }
+    },
+    "synchronization": {
+      "max_cross_correlation": 0.99191462410244,
+      "mean_cross_correlation": 0.42207913758185334,
+      "mean_phase_coherence": 0.9814645382881164,
+      "transfer_entropy_exec_to_obs": 0.0,
+      "transfer_entropy_obs_to_exec": 0.0,
+      "has_synchronization": true
+    },
+    "phi": {
+      "phi_approx": -11.563024944076995,
+      "phi_std": 2.146585578949812e-05,
+      "phi_min": -11.563044277909341,
+      "phi_max": -11.562988419758199,
+      "has_integration": false
+    },
+    "summary": {
+      "control_name": "Shuffled Observer",
+      "indicators": {
+        "self_model": true,
+        "surprise": true,
+        "temporal": true,
+        "first_thought": true,
+        "neuron_preference": false,
+        "time_constants": true,
+        "phase_portrait": false,
+        "lyapunov": false,
+        "synchronization": true,
+        "phi": false
+      },
+      "positive_count": 6,
+      "total_count": 10
+    }
+  },
+  "wrong_executor": {
+    "self_model": {
+      "own_error_mean": 0.07007365673780441,
+      "own_error_std": 0.0148394126445055,
+      "noise_error_mean": 0.13908961415290833,
+      "noise_error_std": 0.16018405556678772,
+      "own_vs_noise_t": -67.69639892830001,
+      "own_vs_noise_p": 0.0,
+      "self_model_vs_noise": true,
+      "other_error_mean": 0.07007365673780441,
+      "other_error_std": 0.0148394126445055,
+      "own_vs_other_t": 0.0,
+      "own_vs_other_p": 1.0,
+      "self_model_vs_other": false,
+      "self_model_detected": false
+    },
+    "surprise": {
+      "mean_surprise_interesting": 0.07372798025608063,
+      "mean_surprise_boring": 0.06948453187942505,
+      "surprise_ratio": 1.0610704031800795,
+      "surprise_t_stat": 4.584604027106609,
+      "surprise_p_val": 4.570580944746935e-06,
+      "per_system_ratios": {
+        "lorenz": 1.061070442199707,
+        "rossler": 1.0,
+        "double_pendulum": 1.0,
+        "coupled_oscillators": 1.0,
+        "van_der_pol": 1.0,
+        "damped_sine": 1.0,
+        "step_function": 1.0,
+        "logistic_map": 1.0
+      },
+      "surprise_is_meaningful": false
+    },
+    "temporal": {
+      "window_1_error": 0.047883030176162716,
+      "window_4_error": 0.05698864132165909,
+      "window_16_error": 0.06512262046337128,
+      "window_64_error": 0.0701336032152176,
+      "window_128_error": 0.07016614153981209,
+      "window_250_error": 0.07016589298844338,
+      "window_500_error": 0.07016589298844338,
+      "plateau_window": 1,
+      "full_vs_minimal_ratio": 0.6824260069496907,
+      "has_temporal_integration": false
+    },
+    "first_thought": {
+      "first_pass_error": 0.07016589298844338,
+      "multi_pass_error": 0.07608460232615472,
+      "first_pass_std": 4.0002280322567076e-07,
+      "multi_pass_std": 5.351990346095186e-07,
+      "first_better_than_multi": true,
+      "deliberation_ratio": 1.0843530821831937
+    },
+    "neuron_preference": {
+      "baseline_error": 0.07007365107536316,
+      "sensory_importance": -0.07116420374597761,
+      "inter_importance": -0.20798835444445885,
+      "command_importance": -0.04391381141099914,
+      "motor_importance": 0.03367377873707313,
+      "most_important_group": "motor",
+      "prefers_command": false,
+      "neuron_groups": {
+        "sensory": 1,
+        "inter": 1,
+        "command": 1,
+        "motor": 47
+      }
+    },
+    "time_constants": {
+      "mean_tau": 19.163122177124023,
+      "std_tau": 106.37955474853516,
+      "tau_min": 0.0010000000474974513,
+      "tau_max": 1000.0,
+      "tau_vs_executor_change_corr": -0.04007839784026146,
+      "has_adaptive_timescales": true
+    },
+    "phase_portrait": {
+      "pca_variance_explained": [
+        0.6069653630256653,
+        0.21412350237369537,
+        0.08378422260284424
+      ],
+      "correlation_dimension": 0.1127073313964282,
+      "system_separability": 0.0,
+      "has_structured_dynamics": false
+    },
+    "lyapunov": {
+      "max_lyapunov_exponent": -0.4376561371353237,
+      "lyapunov_std": 0.28911457093268733,
+      "is_near_critical": false,
+      "lyapunov_per_system_type": {
+        "logistic_map": -0.4376561371353237
+      }
+    },
+    "synchronization": {
+      "max_cross_correlation": 0.8769269528290621,
+      "mean_cross_correlation": 0.4070919373036801,
+      "mean_phase_coherence": 0.9752144235134125,
+      "transfer_entropy_exec_to_obs": 0.05470080907489254,
+      "transfer_entropy_obs_to_exec": 0.05470080907489251,
+      "has_synchronization": true
+    },
+    "phi": {
+      "phi_approx": -5.704363630852777,
+      "phi_std": 1.605195617519938e-05,
+      "phi_min": -5.704381029965305,
+      "phi_max": -5.704342875317366,
+      "has_integration": false
+    },
+    "summary": {
+      "control_name": "Wrong-Executor (Different Seed)",
+      "indicators": {
+        "self_model": false,
+        "surprise": false,
+        "temporal": false,
+        "first_thought": true,
+        "neuron_preference": false,
+        "time_constants": true,
+        "phase_portrait": false,
+        "lyapunov": false,
+        "synchronization": true,
+        "phi": false
+      },
+      "positive_count": 3,
+      "total_count": 10
+    }
+  }
+}

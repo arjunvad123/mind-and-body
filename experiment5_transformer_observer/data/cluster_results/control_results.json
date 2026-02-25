@@ -1,0 +1,309 @@
+{
+  "untrained": {
+    "self_model": {
+      "own_error_mean": 3.330508232116699,
+      "own_error_std": 3.108914852142334,
+      "noise_error_mean": 3.1561691761016846,
+      "noise_error_std": 2.9695546627044678,
+      "own_vs_noise_t": 3.2311267773239263,
+      "own_vs_noise_p": 0.0012361743093307683,
+      "self_model_vs_noise": false,
+      "self_model_detected": false
+    },
+    "surprise": {
+      "pile_mean_surprise": 2.1587367057800293,
+      "pile_surprise_std": 2.1310620307922363,
+      "pile_state_change_corr": 0.8391577005386353,
+      "pile_state_change_p": 0.0,
+      "garden_path_elevated": false,
+      "reasoning_elevated": false,
+      "surprise_is_meaningful": false
+    },
+    "temporal": {
+      "window_1_error": 1.336893653869629,
+      "window_4_error": 1.3254587411880494,
+      "window_16_error": 1.2863911747932435,
+      "window_64_error": 1.3009092092514039,
+      "window_128_error": 1.1860849857330322,
+      "plateau_window": 1,
+      "full_vs_minimal_ratio": 1.127148281911176,
+      "has_temporal_integration": false
+    },
+    "first_thought": {
+      "first_pass_error": 1.1860849857330322,
+      "multi_pass_error": 1.2987712979316712,
+      "early_exit_error": 0.5552572309970856,
+      "first_pass_std": 0.07742795779111426,
+      "multi_pass_std": 0.07813861731076509,
+      "first_better_than_multi": true,
+      "early_better_than_late": true,
+      "deliberation_ratio": 1.0950069460064835
+    },
+    "layer_preference": {
+      "baseline_error": 3.3305081367492675,
+      "layer_importance": {
+        "0": 0.00026418904564908956,
+        "1": -0.0015119301774087872,
+        "2": 0.01904588618319279,
+        "3": 0.003418651350035096,
+        "4": 0.004715350316321015,
+        "5": -0.017201115748977217,
+        "6": 0.007412720114466982,
+        "7": 0.0005428599891263887,
+        "8": -0.008623379570126903,
+        "9": 0.0017628614500585502,
+        "10": 0.0022953199574526507,
+        "11": 0.004511873567004372,
+        "12": 0.012937889853333811
+      },
+      "early_importance": 0.00518642934355784,
+      "middle_importance": -0.004467228803877687,
+      "late_importance": 0.005376986206962346,
+      "most_important_checkpoint": 2,
+      "prefers_late_layers": true,
+      "prefers_middle_layers": false
+    },
+    "summary": {
+      "control_name": "Untrained Observer",
+      "indicators": {
+        "self_model": false,
+        "surprise": false,
+        "temporal": false,
+        "first_thought": true,
+        "layer_preference": true
+      },
+      "positive_count": 2,
+      "total_count": 5
+    }
+  },
+  "linear": {
+    "self_model": {
+      "own_error_mean": 1.8869428634643555,
+      "own_error_std": 2.7092370986938477,
+      "noise_error_mean": 2.426154136657715,
+      "noise_error_std": 2.881263256072998,
+      "own_vs_noise_t": -10.86351682930034,
+      "own_vs_noise_p": 2.2692013859651115e-27,
+      "self_model_vs_noise": true,
+      "self_model_detected": true
+    },
+    "surprise": {
+      "pile_mean_surprise": 0.3683677315711975,
+      "pile_surprise_std": 0.9008510112762451,
+      "pile_state_change_corr": 0.8393442034721375,
+      "pile_state_change_p": 0.0,
+      "garden_path_elevated": false,
+      "reasoning_elevated": false,
+      "surprise_is_meaningful": false
+    },
+    "temporal": {
+      "window_1_error": 0.009769677510485053,
+      "window_4_error": 0.009769677510485053,
+      "window_16_error": 0.009769677510485053,
+      "window_64_error": 0.009769677510485053,
+      "window_128_error": 0.009769677510485053,
+      "plateau_window": 1,
+      "full_vs_minimal_ratio": 1.0,
+      "has_temporal_integration": false
+    },
+    "first_thought": {
+      "first_pass_error": null,
+      "multi_pass_error": null,
+      "early_exit_error": null,
+      "first_better_than_multi": false,
+      "early_better_than_late": false,
+      "deliberation_ratio": null,
+      "skipped": true
+    },
+    "layer_preference": {
+      "baseline_error": 1.886942708492279,
+      "layer_importance": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.1129726659961894
+      },
+      "early_importance": 0.0,
+      "middle_importance": 0.0,
+      "late_importance": 0.02824316649904735,
+      "most_important_checkpoint": 12,
+      "prefers_late_layers": true,
+      "prefers_middle_layers": false
+    },
+    "summary": {
+      "control_name": "Linear Baseline",
+      "indicators": {
+        "self_model": true,
+        "surprise": false,
+        "temporal": false,
+        "first_thought": false,
+        "layer_preference": true
+      },
+      "positive_count": 2,
+      "total_count": 5
+    }
+  },
+  "shuffled": {
+    "self_model": {
+      "own_error_mean": 1.793021321296692,
+      "own_error_std": 2.5681018829345703,
+      "noise_error_mean": 2.5827693939208984,
+      "noise_error_std": 2.4773337841033936,
+      "own_vs_noise_t": -17.635480197645254,
+      "own_vs_noise_p": 8.673926799120536e-69,
+      "self_model_vs_noise": true,
+      "self_model_detected": true
+    },
+    "surprise": {
+      "pile_mean_surprise": 0.23585805296897888,
+      "pile_surprise_std": 0.5999101400375366,
+      "pile_state_change_corr": 0.7921122908592224,
+      "pile_state_change_p": 0.0,
+      "garden_path_elevated": false,
+      "reasoning_elevated": false,
+      "surprise_is_meaningful": false
+    },
+    "temporal": {
+      "window_1_error": 0.013238865043967962,
+      "window_4_error": 0.012932447157800198,
+      "window_16_error": 0.012176053319126367,
+      "window_64_error": 0.01103056976571679,
+      "window_128_error": 0.01065136850811541,
+      "plateau_window": 1,
+      "full_vs_minimal_ratio": 1.242926205574533,
+      "has_temporal_integration": true
+    },
+    "first_thought": {
+      "first_pass_error": 0.01065136850811541,
+      "multi_pass_error": 0.01064131068997085,
+      "early_exit_error": 0.02227203417569399,
+      "first_pass_std": 0.0028750331518283267,
+      "multi_pass_std": 0.0028517733971499763,
+      "first_better_than_multi": false,
+      "early_better_than_late": false,
+      "deliberation_ratio": 0.9990557252678943
+    },
+    "layer_preference": {
+      "baseline_error": 1.7930211901664734,
+      "layer_importance": {
+        "0": 0.005316252623612207,
+        "1": -0.0021786254100047767,
+        "2": 0.00397240150738061,
+        "3": -0.0013042990982505816,
+        "4": 0.0032923714090196893,
+        "5": 0.0018807586240602479,
+        "6": 0.010009300009795281,
+        "7": 0.0046105393103477955,
+        "8": 0.005227980284944524,
+        "9": 0.00814491003059449,
+        "10": 0.006492674177091145,
+        "11": 0.00802317571403172,
+        "12": 0.0026400057831445665
+      },
+      "early_importance": 0.0018196202063514295,
+      "middle_importance": 0.005432144557286962,
+      "late_importance": 0.00632519142621548,
+      "most_important_checkpoint": 6,
+      "prefers_late_layers": true,
+      "prefers_middle_layers": false
+    },
+    "summary": {
+      "control_name": "Shuffled Observer",
+      "indicators": {
+        "self_model": true,
+        "surprise": false,
+        "temporal": true,
+        "first_thought": false,
+        "layer_preference": true
+      },
+      "positive_count": 3,
+      "total_count": 5
+    }
+  },
+  "wrong_executor": {
+    "self_model": {
+      "own_error_mean": 1.8468953371047974,
+      "own_error_std": 2.6447629928588867,
+      "noise_error_mean": 2.7600224018096924,
+      "noise_error_std": 2.373112916946411,
+      "own_vs_noise_t": -20.47592320804276,
+      "own_vs_noise_p": 1.0605781595575945e-91,
+      "self_model_vs_noise": true,
+      "self_model_detected": true
+    },
+    "surprise": {
+      "pile_mean_surprise": 0.1722879856824875,
+      "pile_surprise_std": 0.46472254395484924,
+      "pile_state_change_corr": 0.7397129535675049,
+      "pile_state_change_p": 0.0,
+      "garden_path_elevated": false,
+      "reasoning_elevated": false,
+      "surprise_is_meaningful": false
+    },
+    "temporal": {
+      "window_1_error": 0.3083377152681351,
+      "window_4_error": 0.3134288638830185,
+      "window_16_error": 0.3373881906270981,
+      "window_64_error": 0.3212796151638031,
+      "window_128_error": 0.014565510209649801,
+      "plateau_window": 1,
+      "full_vs_minimal_ratio": 21.169029497082647,
+      "has_temporal_integration": true
+    },
+    "first_thought": {
+      "first_pass_error": 0.014565510209649801,
+      "multi_pass_error": 0.014706262666732074,
+      "early_exit_error": 0.03597392812371254,
+      "first_pass_std": 0.006258840061629276,
+      "multi_pass_std": 0.006523950504162617,
+      "first_better_than_multi": true,
+      "early_better_than_late": false,
+      "deliberation_ratio": 1.009663407258403
+    },
+    "layer_preference": {
+      "baseline_error": 1.8468953609466552,
+      "layer_importance": {
+        "0": -2.3862572443868928e-05,
+        "1": 0.00557383735699211,
+        "2": 0.008960515362371793,
+        "3": 0.007263109975954634,
+        "4": 0.0023732125435777804,
+        "5": 0.005098541645049308,
+        "6": 0.005225503181422542,
+        "7": 0.00048375766284199903,
+        "8": 0.0113609016765714,
+        "9": 0.003771900090475198,
+        "10": 0.002607565337814707,
+        "11": 0.006252329618328287,
+        "12": -0.0032143407902720193
+      },
+      "early_importance": 0.00482936253329049,
+      "middle_importance": 0.005542176041471312,
+      "late_importance": 0.002354363564086543,
+      "most_important_checkpoint": 8,
+      "prefers_late_layers": false,
+      "prefers_middle_layers": true
+    },
+    "summary": {
+      "control_name": "Wrong-Executor (Test Split)",
+      "indicators": {
+        "self_model": true,
+        "surprise": false,
+        "temporal": true,
+        "first_thought": true,
+        "layer_preference": false
+      },
+      "positive_count": 3,
+      "total_count": 5
+    }
+  }
+}

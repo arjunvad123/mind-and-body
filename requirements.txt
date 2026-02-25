@@ -1,0 +1,12 @@
+torch>=2.0.0
+gymnasium[mujoco]>=0.29.0
+stable-baselines3>=2.0.0
+numpy>=1.24.0
+h5py>=3.8.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+scikit-learn>=1.3.0
+pandas>=2.0.0
+tqdm>=4.65.0
+tensorboard>=2.13.0
+anthropic>=0.39.0

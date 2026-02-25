@@ -1,0 +1,13 @@
+{
+  "observer_final_train_loss": 0.4028126420453191,
+  "observer_final_val_loss": 0.002120713625724117,
+  "linear_final_train_loss": 0.03207081807777286,
+  "shuffled_final_train_loss": 0.43460143003612756,
+  "n_seed_observers": 5,
+  "scaling_sizes": [
+    10,
+    20,
+    100,
+    200
+  ]
+}

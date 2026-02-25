@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Large data files
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.bin
+
+# Keep results JSONs (they're small)
+!**/results/*.json
+!**/cluster_results/*.json
+!**/data/*.json
+
+# Environment
+.env
+.env.*
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Experiment-specific large data
+experiment5_transformer_observer/data/activations*.h5
+experiment6_liquid_observer/data/
+experiment1_separation/data/checkpoints/
+experiment1_separation/data/*.pt

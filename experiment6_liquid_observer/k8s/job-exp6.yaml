@@ -1,0 +1,84 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: exp6-liquid-observer
+spec:
+  backoffLimit: 2
+  template:
+    spec:
+      containers:
+        - name: experiment
+          image: pytorch/pytorch:2.3.0-cuda12.1-cudnn8-runtime
+          command:
+            - "/bin/bash"
+            - "-c"
+          args:
+            - |
+              set -e
+              echo "=== Experiment 6: Liquid Neural Network Observer-Executor ==="
+              echo "Device: $(python -c 'import torch; print("CUDA" if torch.cuda.is_available() else "CPU")')"
+              echo "GPU: $(nvidia-smi --query-gpu=name --format=csv,noheader 2>/dev/null || echo 'none')"
+
+              echo "=== Installing dependencies ==="
+              pip install --quiet --upgrade ncps h5py scipy scikit-learn tqdm
+
+              echo "=== Setting up code ==="
+              mkdir -p /workspace/experiment6_liquid_observer
+              cp /code/experiment6_liquid_observer/*.py /workspace/experiment6_liquid_observer/
+              cd /workspace
+
+              echo "=== Creating data directories ==="
+              mkdir -p /data/experiment6/results /data/experiment6/checkpoints
+
+              echo "=== Starting experiment ==="
+              export EXP6_DATA_DIR=/data/experiment6
+              python -m experiment6_liquid_observer.run_experiment 2>&1
+
+              echo "=== Experiment complete ==="
+              echo "Results saved to /data/experiment6/results/"
+              ls -la /data/experiment6/results/
+          resources:
+            requests:
+              memory: "8Gi"
+              cpu: "4"
+              nvidia.com/gpu: "1"
+              ephemeral-storage: "5Gi"
+            limits:
+              memory: "10Gi"
+              cpu: "4"
+              nvidia.com/gpu: "1"
+              ephemeral-storage: "10Gi"
+          volumeMounts:
+            - name: exp6-code
+              mountPath: /code/experiment6_liquid_observer
+              readOnly: true
+            - name: exp6-data
+              mountPath: /data/experiment6
+          env:
+            - name: EXP6_DATA_DIR
+              value: "/data/experiment6"
+            - name: PYTHONPATH
+              value: "/workspace"
+            - name: PYTHONUNBUFFERED
+              value: "1"
+      volumes:
+        - name: exp6-code
+          configMap:
+            name: exp6-code
+        - name: exp6-data
+          persistentVolumeClaim:
+            claimName: exp6-liquid-data
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: nvidia.com/gpu.product
+                    operator: NotIn
+                    values:
+                      - NVIDIA-GeForce-GTX-1080-Ti
+                      - NVIDIA-GeForce-GTX-1080
+                      - NVIDIA-GeForce-GTX-1070
+                      - NVIDIA-TITAN-X-Pascal
+                      - Quadro-M4000
+      restartPolicy: Never

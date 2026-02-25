@@ -1,0 +1,172 @@
+{
+  "self_model": {
+    "own_error_mean": 0.001797611708752811,
+    "own_error_std": 0.020395386964082718,
+    "noise_error_mean": 0.12078595906496048,
+    "noise_error_std": 0.1861478090286255,
+    "own_vs_noise_t": -100.26427465109128,
+    "own_vs_noise_p": 0.0,
+    "self_model_vs_noise": true,
+    "other_error_mean": 22.1600399017334,
+    "other_error_std": 0.751461923122406,
+    "own_vs_other_t": -4651.139700462638,
+    "own_vs_other_p": 0.0,
+    "self_model_vs_other": true,
+    "self_model_detected": true
+  },
+  "surprise": {
+    "mean_surprise_interesting": 0.008973450399935246,
+    "mean_surprise_boring": 0.001745377667248249,
+    "surprise_ratio": 5.141265737679988,
+    "surprise_t_stat": 8.101797756982217,
+    "surprise_p_val": 5.537215328580569e-16,
+    "per_system_ratios": {
+      "lorenz": 5.141265869140625,
+      "rossler": 1.0,
+      "double_pendulum": 1.0,
+      "coupled_oscillators": 1.0,
+      "van_der_pol": 1.0,
+      "damped_sine": 1.0,
+      "step_function": 1.0,
+      "logistic_map": 1.0
+    },
+    "surprise_is_meaningful": true
+  },
+  "temporal": {
+    "window_1_error": 0.010316441357135773,
+    "window_4_error": 0.00319466270506382,
+    "window_16_error": 0.0007820426998659968,
+    "window_64_error": 0.0004229526431299746,
+    "window_128_error": 0.00042292601836379617,
+    "window_250_error": 0.00042292491940315813,
+    "window_500_error": 0.00042292490834370253,
+    "plateau_window": 64,
+    "full_vs_minimal_ratio": 24.39308055308913,
+    "has_temporal_integration": true
+  },
+  "first_thought": {
+    "first_pass_error": 0.00042292490834370253,
+    "multi_pass_error": 0.0006021486292593181,
+    "first_pass_std": 1.4940507625082638e-07,
+    "multi_pass_std": 2.7209735126303315e-07,
+    "first_better_than_multi": true,
+    "deliberation_ratio": 1.4237719684506358
+  },
+  "preferences": {
+    "n_observers": 5,
+    "mean_cross_rsa": 0.0005336440168321133,
+    "min_cross_rsa": -0.2572532594203949,
+    "max_cross_rsa": 0.24244216084480286,
+    "rsa_matrix": [
+      [
+        1.0,
+        0.006965412758290768,
+        -0.009784277528524399,
+        0.1724359393119812,
+        -0.14808806777000427
+      ],
+      [
+        0.006965412758290768,
+        1.0,
+        0.24244216084480286,
+        0.05448296666145325,
+        -0.07431915402412415
+      ],
+      [
+        -0.009784277528524399,
+        0.24244213104248047,
+        0.9999999403953552,
+        -0.040516916662454605,
+        0.05897163599729538
+      ],
+      [
+        0.1724359393119812,
+        0.05448296666145325,
+        -0.040516916662454605,
+        1.0,
+        -0.2572532594203949
+      ],
+      [
+        -0.14808806777000427,
+        -0.07431915402412415,
+        0.05897163599729538,
+        -0.2572532594203949,
+        1.0
+      ]
+    ],
+    "convergent_representations": false
+  },
+  "neuron_preference": {
+    "baseline_error": 0.0017976116458885373,
+    "sensory_importance": 0.02472505791433692,
+    "inter_importance": 1.1730258812858976,
+    "command_importance": 0.004621391518999001,
+    "motor_importance": 4.479311353640394,
+    "most_important_group": "motor",
+    "prefers_command": false,
+    "neuron_groups": {
+      "sensory": 1,
+      "inter": 1,
+      "command": 1,
+      "motor": 47
+    }
+  },
+  "time_constants": {
+    "mean_tau": 74.14714050292969,
+    "std_tau": 226.89306640625,
+    "tau_min": 0.0010000000474974513,
+    "tau_max": 1000.0,
+    "tau_vs_executor_change_corr": -0.14036501944065094,
+    "has_adaptive_timescales": true
+  },
+  "phase_portrait": {
+    "pca_variance_explained": [
+      0.3479752540588379,
+      0.2443724423646927,
+      0.1683778613805771
+    ],
+    "correlation_dimension": 0.14166825763370605,
+    "system_separability": 0.0,
+    "has_structured_dynamics": false
+  },
+  "lyapunov": {
+    "max_lyapunov_exponent": -0.33107970666149006,
+    "lyapunov_std": 0.3635273297269766,
+    "is_near_critical": false,
+    "lyapunov_per_system_type": {
+      "logistic_map": -0.33107970666149006
+    }
+  },
+  "synchronization": {
+    "max_cross_correlation": 0.92702648435961,
+    "mean_cross_correlation": 0.3011493140490176,
+    "mean_phase_coherence": 0.9761832867622375,
+    "transfer_entropy_exec_to_obs": 0.10536327337476827,
+    "transfer_entropy_obs_to_exec": 0.10056698653508599,
+    "has_synchronization": true
+  },
+  "phi": {
+    "phi_approx": -6.006745294629002,
+    "phi_std": 2.6008321137700524e-05,
+    "phi_min": -6.006776470538625,
+    "phi_max": -6.006703278565112,
+    "has_integration": false
+  },
+  "summary": {
+    "indicators": {
+      "self_model": true,
+      "surprise": true,
+      "temporal": true,
+      "first_thought": true,
+      "preferences": false,
+      "neuron_preference": false,
+      "time_constants": true,
+      "phase_portrait": false,
+      "lyapunov": false,
+      "synchronization": true,
+      "phi": false
+    },
+    "positive_count": 6,
+    "total_count": 11
+  }
+}

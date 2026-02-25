@@ -1,0 +1,84 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: exp5-transformer-observer
+spec:
+  backoffLimit: 2
+  template:
+    spec:
+      containers:
+        - name: experiment
+          image: pytorch/pytorch:2.3.0-cuda12.1-cudnn8-runtime
+          command:
+            - "/bin/bash"
+            - "-c"
+          args:
+            - |
+              set -e
+              echo "=== Experiment 5: Low-Level Transformer Observer ==="
+              echo "Device: $(python -c 'import torch; print("CUDA" if torch.cuda.is_available() else "CPU")')"
+              echo "GPU: $(nvidia-smi --query-gpu=name --format=csv,noheader 2>/dev/null || echo 'none')"
+
+              echo "=== Installing dependencies ==="
+              pip install --quiet --upgrade torchvision transformers transformer-lens h5py scipy scikit-learn tqdm
+
+              echo "=== Setting up code ==="
+              mkdir -p /workspace/experiment5_transformer_observer
+              cp /code/experiment5_transformer_observer/*.py /workspace/experiment5_transformer_observer/
+              cd /workspace
+
+              echo "=== Creating data directories ==="
+              mkdir -p /data/experiment5/results /data/experiment5/checkpoints
+
+              echo "=== Starting experiment ==="
+              export EXP5_DATA_DIR=/data/experiment5
+              python -m experiment5_transformer_observer.run_experiment 2>&1
+
+              echo "=== Experiment complete ==="
+              echo "Results saved to /data/experiment5/results/"
+              ls -la /data/experiment5/results/
+          resources:
+            requests:
+              memory: "14Gi"
+              cpu: "4"
+              nvidia.com/gpu: "1"
+            limits:
+              memory: "16Gi"
+              cpu: "4"
+              nvidia.com/gpu: "1"
+          volumeMounts:
+            - name: exp5-code
+              mountPath: /code/experiment5_transformer_observer
+              readOnly: true
+            - name: exp5-data
+              mountPath: /data/experiment5
+          env:
+            - name: EXP5_DATA_DIR
+              value: "/data/experiment5"
+            - name: PYTHONPATH
+              value: "/workspace"
+            - name: HF_HOME
+              value: "/data/experiment5/.cache/huggingface"
+            - name: TRANSFORMERS_CACHE
+              value: "/data/experiment5/.cache/huggingface"
+      volumes:
+        - name: exp5-code
+          configMap:
+            name: exp5-code
+        - name: exp5-data
+          persistentVolumeClaim:
+            claimName: exp5-observer-data
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: nvidia.com/gpu.product
+                    operator: NotIn
+                    values:
+                      - NVIDIA-GeForce-GTX-1080-Ti
+                      - NVIDIA-GeForce-GTX-1080
+                      - NVIDIA-GeForce-GTX-1070
+                      - NVIDIA-TITAN-X-Pascal
+                      - Quadro-M4000
+      restartPolicy: Never

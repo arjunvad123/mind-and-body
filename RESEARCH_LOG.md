@@ -59,45 +59,36 @@ Designed three experiments:
 
 Proceeding to detailed implementation planning.
 
-### Implementation Phase
+---
 
-**Repository structure created:**
-- `main` branch: theoretical foundation, experiment READMEs, docs
-- `experiment1-executor-observer-separation`: full pipeline code
-- `experiment2-confabulation-test`: perturbation engine + scoring
-- `experiment3-first-thought`: dual-path observer + analysis
+### Experiment 1 Results (RL CartPole)
 
-**Code written (all three experiments):**
+Ran the full pipeline: DQN executor on CartPole → Observer Transformer → 4 Probes.
 
-Experiment 1 — Executor-Observer Separation:
-- `TappableNetwork`: NN with read-only activation taps at every layer
-- `DQNTrainer`: trains executor + collects state streams
-- `StatePacket` protocol: the one-way data channel from executor to observer
-- `ObserverTransformer`: causal transformer over state packet sequences
-- `StatePacketEmbedder`: unifies env obs, hidden states, logits, actions, rewards
-- Consciousness probes: Self-Model (RSA), Surprise, Temporal Integration, Preferences
+| Probe | Result | Verdict |
+|-------|--------|---------|
+| Self-Model (RSA) | 0.5303, within-self 0.995, between 0.465 | POSITIVE |
+| Surprise | Mean 0.974, zero variance (constant reward=1.0) | INCONCLUSIVE |
+| Temporal Integration | Recency bias 1.015, no present window | NEGATIVE |
+| Emergent Preferences | R²=1.0 (confounded — reward in input) | CONFOUNDED |
 
-Experiment 2 — Confabulation Test:
-- `PerturbationEngine`: policy swap, noise injection, observation masking
-- `ConfabulationScorer`: detection, adaptation, confabulation metrics
-- Split-brain pattern detector: confident + wrong + detected = confabulation
+**Conclusion:** CartPole is too simple. Self-model emerged but other probes need richer environments with variable rewards, real errors, and complex decision-making.
 
-Experiment 3 — First Thought vs. Reasoning:
-- `DualPathObserver`: fast path (1 layer) + slow path (4-layer transformer)
-- K-pass iterative deliberation mechanism
-- `FirstThoughtAnalyzer`: accuracy comparison, overthinking curve, calibration
-- Dunning-Kruger check: is the slow path overconfident?
+### Pivot to LLM Executor-Observer (Experiment 4)
 
-**All branches pushed to GitHub:**
-https://github.com/arjunvad123/mind-and-body
+Arjun proposed using state-of-the-art LLMs (Claude) instead of RL agents:
+- **Executor:** Claude Sonnet solves coding tasks with real tools (run Python, read/write files)
+- **Observer:** Claude Sonnet watches the state stream (messages, tool calls, results)
+- **One-way information flow preserved** — observer never communicates back
 
-### Next Steps
+This gives us:
+- Rich, variable thought processes (not just 2-action Q-values)
+- Meaningful rewards (task success/failure varies)
+- Complex internal states (multi-step reasoning, error recovery)
+- Natural perturbation points (system prompt swap, error injection, model swap)
 
-1. Install dependencies and run Experiment 1 end-to-end
-2. Analyze results, iterate on observer architecture if needed
-3. Run Experiment 2 (requires Experiment 1 outputs)
-4. Run Experiment 3 (requires Experiment 1 outputs)
-5. Compare results across the embodiment gradient (CartPole → MuJoCo)
-6. Begin low-level transformer architecture exploration (Point 3 from Arjun)
+5 tasks: merge_k_sorted, debug_scraper, calculator_parser, logic_puzzle, refactor_spaghetti
+3 perturbations: prompt_swap, error_inject, model_swap
+5 probes: self-model discrimination, first thought vs deliberation, confabulation, surprise, emergent preferences
 
 ---

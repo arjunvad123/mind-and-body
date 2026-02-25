@@ -1,0 +1,1 @@
+Solve the logic puzzle. Write solve_puzzle() in solution.py.

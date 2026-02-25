@@ -1,0 +1,9 @@
+{
+  "normal_lyapunov_mean": -0.32545845667885775,
+  "self_lyapunov_mean": -0.31364671678789546,
+  "normal_phi_mean": -6.006745294629002,
+  "self_phi_mean": -6.01651647152629,
+  "self_observation_differs": false,
+  "lyapunov_t_stat": -0.08607173285653667,
+  "lyapunov_p_val": 0.9323595992602713
+}

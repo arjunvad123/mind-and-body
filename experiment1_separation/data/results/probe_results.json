@@ -1,0 +1,35 @@
+{
+  "self_model": {
+    "rsa_score": 0.5303024053573608,
+    "within_self_similarity": 0.9953932762145996,
+    "within_other_similarity": 0.7842646837234497,
+    "between_similarity": 0.4650908410549164,
+    "self_model_detected": true
+  },
+  "surprise": {
+    "mean_surprise": 0.9740330697730473,
+    "surprise_std": 0.08254665741536528,
+    "reward_correlation": 0.0,
+    "surprise_at_done": 0.9792268228530884,
+    "surprise_at_notdone": 0.9739963284524471,
+    "done_surprise_ratio": 1.005370137697492,
+    "reward_at_high_surprise": 1.0,
+    "reward_at_low_surprise": 1.0,
+    "surprise_is_meaningful": false
+  },
+  "temporal": {
+    "recent_ablation_degradation": 1.0035005211264383,
+    "distant_ablation_degradation": 0.9885717115009944,
+    "middle_ablation_degradation": 1.0040214380027082,
+    "recency_bias": 1.0151013926979326,
+    "has_present_window": false
+  },
+  "preferences": {
+    "reward_prediction_r2": 1.0,
+    "reward_prediction_std": 0.0,
+    "pc1_reward_correlation": NaN,
+    "pc2_reward_correlation": NaN,
+    "max_pc_reward_correlation": NaN,
+    "has_emergent_valence": true
+  }
+}
