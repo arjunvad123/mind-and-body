@@ -1,3 +1,5 @@
+> **Status: Theoretical Design** -- This experiment has been designed but not yet implemented.
+
 # Experiment 2: The Confabulation Test
 
 ## Overview

@@ -1,12 +1,24 @@
+# Top-level requirements (union of all experiments)
+# For experiment-specific dependencies, see each experiment's requirements.txt
+
+# Core
 torch>=2.0.0
-gymnasium[mujoco]>=0.29.0
-stable-baselines3>=2.0.0
 numpy>=1.24.0
 h5py>=3.8.0
-matplotlib>=3.7.0
-seaborn>=0.12.0
+scipy>=1.11.0
 scikit-learn>=1.3.0
-pandas>=2.0.0
+matplotlib>=3.7.0
 tqdm>=4.65.0
-tensorboard>=2.13.0
+
+# Experiment 1: RL
+gymnasium>=0.29.0
+
+# Experiment 4: LLM
 anthropic>=0.39.0
+
+# Experiment 5: Transformer
+transformers>=4.30.0
+datasets>=2.14.0
+
+# Experiment 6: Liquid Neural Networks
+ncps>=0.0.7

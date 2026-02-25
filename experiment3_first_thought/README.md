@@ -1,3 +1,5 @@
+> **Status: Theoretical Design** -- This experiment has been designed but not yet implemented.
+
 # Experiment 3: First Thought vs. Reasoned Explanation
 
 ## Overview
